@@ -1,25 +1,25 @@
 <p id="notice"><%= notice %></p>
 
+<h1>
+  <strong><%= @speech.candidate.name %></strong>
+</h1>
+
 <p>
-  <strong>Date:</strong>
+  <strong>Date of Speech:</strong>
   <%= @speech.date %>
 </p>
 
-<p>
+<p id="speechtext">
   <strong>Text:</strong>
   <%= @speech.text %>
 </p>
 
-<p>
-  <strong>Candidate:</strong>
-  <%= @speech.candidate.name %>
-</p>
 <br>
 <p>
   <strong>Concept Count: </strong><%= @speech.concepts.count %>
 </p>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Concept</th>

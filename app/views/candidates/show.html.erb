@@ -1,9 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @candidate.name %>
-</p>
+<h1>
+  <strong><%= @candidate.name %></strong>
+</h1>
 
 <p>
   <strong>Party:</strong>
@@ -12,7 +11,7 @@
 
 <h3>Candidate Speeches</h3>
 
-<table>
+<table class="table table-condensed">
   <thead>
     <tr>
       <th>Date of Speech</th>
@@ -25,7 +24,7 @@
   <% @candidate.speeches.each do |speech| %>
     <tr>
     <td><%= speech.date %></td>
-    <td><%= speech.text %></td>
+    <td><%= truncate(speech.text, length: 100) %></td>
     <td><%= link_to 'Concepts', speech_path %></td>
     <td><%= speech.created_at %></td>
     </tr>

@@ -13,3 +13,35 @@
  *= require_tree .
  *= require_self
  */
+
+
+body {
+  background-image: url(http://work.chron.com/DM-Resize/photos.demandstudios.com/getty/article/251/63/86801847.jpg?w=9650&h=876&keep_ratio=1&webp=1);
+  text-align: center;
+}
+
+h1, h3, p, th, tr {
+  font-family: "Courier New", "Lucida Console", sans-serif;
+}
+
+td {
+  font-family: "Courier New", "Lucida Console", sans-serif;
+  font-weight: bold;
+}
+
+.table {
+  background-color: white;
+  opacity: 0.8;
+  width: 40%;
+  margin: 0 auto;
+  border-radius: 25px;
+}
+
+th {
+  text-align: center;
+}
+
+#speechtext {
+  width: 60%;
+  margin: 0 auto;
+}
